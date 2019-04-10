@@ -1,17 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+  var buttons = document.getElementsByClassName('buttonNum')
+    // the code that will run when the event occurs
+  /*  console.log("Button was clicked");
+  });
+*/
+buttons.addEventListener("click", handleClick);
+
+function handleClick(){
+    console.log("Button was clicked");
+  }
+  //get the form
+
 
   var buttons = document.querySelectorAll("buttonNum")
   for (var i = 0; i < buttons.length; ){
     var buttons = buttons[i];
 
-    button.addEventListener("click", function(event){
+    buttons.addEventListener("click", function(){
       console.log(this.value + "was clicked"); // this always refers to the button that was clicked
     })
   }
- for (var i = 0; i < buttons.length; i++) {
-   buttons[i]
- }
+
 
 
 
